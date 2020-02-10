@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { component, fragmnt } from "react";
+import { component, fragment } from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 export const Landing = () => (
 	<fragment>
@@ -68,38 +69,38 @@ export const Landing = () => (
 		</div>
 		<div className="row 3">
 			<div className="col3">
-				<div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+				<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
 					<ol className="carousel-indicators">
-						<li data-target="#carouselExampleCaptions" data-slide-to="0" className="active" />
-						<li data-target="#carouselExampleCaptions" data-slide-to="1" />
-						<li data-target="#carouselExampleCaptions" data-slide-to="2" />
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" className="active" />
+						<li data-target="#carouselExampleIndicators" data-slide-to="1" />
+						<li data-target="#carouselExampleIndicators" data-slide-to="2" />
 					</ol>
 					<div className="carousel-inner">
 						<div className="carousel-item active">
-							<img src="..." className="d-block w-100" alt="..." />
-							<div className="carousel-caption d-none d-md-block">
-								<h5>First slide label</h5>
-								<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-							</div>
+							<img
+								src="https://s1.thcdn.com/productimg/300/300/11468185-4804502981934093.jpg"
+								className="d-block w-100"
+								alt="..."
+							/>
 						</div>
 						<div className="carousel-item">
-							<img src="..." className="d-block w-100" alt="..." />
-							<div className="carousel-caption d-none d-md-block">
-								<h5>Second slide label</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
+							<img
+								src="https://experiencethemistress.com/wp-content/uploads/2017/11/2017-Funko-Disney-Pop-Vinyl-Figure-2-Pack-Cruella-De-Vil-Ursula-Hot-Topic-P001-300x300.jpg"
+								className="d-block w-100"
+								alt="..."
+							/>
 						</div>
 						<div className="carousel-item">
-							<img src="..." className="d-block w-100" alt="..." />
-							<div className="carousel-caption d-none d-md-block">
-								<h5>Third slide label</h5>
-								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-							</div>
+							<img
+								src="https://www.herohabit.com/wp-content/uploads/2017/07/Funko-Pop-Disney-306-Scrooge-McDuck-300x300.jpg"
+								className="d-block w-100"
+								alt="..."
+							/>
 						</div>
 					</div>
 					<a
 						className="carousel-control-prev"
-						href="#carouselExampleCaptions"
+						href="#carouselExampleIndicators"
 						role="button"
 						data-slide="prev">
 						<span className="carousel-control-prev-icon" aria-hidden="true" />
@@ -107,7 +108,7 @@ export const Landing = () => (
 					</a>
 					<a
 						className="carousel-control-next"
-						href="#carouselExampleCaptions"
+						href="#carouselExampleIndicators"
 						role="button"
 						data-slide="next">
 						<span className="carousel-control-next-icon" aria-hidden="true" />
