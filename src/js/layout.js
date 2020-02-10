@@ -8,6 +8,7 @@ import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Login } from "./component/login";
+import { Landing } from "./component/landing";
 //create your first component
 export const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -19,7 +20,7 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Switch>
-						<Route exact path="/" component={Login} />
+						<Route exact path="/" component={Landing} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
