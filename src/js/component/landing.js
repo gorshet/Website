@@ -6,50 +6,7 @@ export const Landing = () => (
 	<fragment>
 		<div className="container">
 			<div className="row">
-				<div className="col">
-					<nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-						<div className="container">
-							<a className="navbar-brand" href="#">
-								Start Bootstrap
-							</a>
-							<button
-								className="navbar-toggler"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarResponsive"
-								aria-controls="navbarResponsive"
-								aria-expanded="false"
-								aria-label="Toggle navigation">
-								<span className="navbar-toggler-icon" />
-							</button>
-							<div className="collapse navbar-collapse" id="navbarResponsive">
-								<ul className="navbar-nav ml-auto">
-									<li className="nav-item active">
-										<a className="nav-link" href="#">
-											Home
-											<span className="sr-only">(current)</span>
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link" href="#">
-											About
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link" href="#">
-											Services
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link" href="#">
-											Contact
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
+				<div className="col" />
 			</div>
 		</div>
 		<div className="row 2">
@@ -70,9 +27,7 @@ export const Landing = () => (
 		<Carousel>
 			<Carousel.Item>
 				<img
-				
 					className="d-block w-100"
-					
 					src="https://www.bing.com/images/blob?bcid=TkPqDTOMAQUBxw"
 					alt="First slide"
 				/>
@@ -96,12 +51,12 @@ export const Landing = () => (
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
-					src="https://www.bing.com/images/blob?bcid=TlX3n1LXwAUBqxcxoNWLuD9SqbotqVTdP98"
+					src="https://www.bing.com/images/blob?bcid=ThOUOJgwqQYBIQ"
 					alt="Third slide"
 				/>
 
 				<Carousel.Caption>
-					<h3>Third slide label</h3>
+					<h3>Third slide stage</h3>
 					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 				</Carousel.Caption>
 			</Carousel.Item>

@@ -5,9 +5,12 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
+import { Product } from "./views/product";
+import { Archive } from "./views/archive";
 import injectContext from "./store/appContext";
 
-import { Login } from "./component/login";
+import { Navbar } from "./component/navbar";
+import { Login } from "./component/login.js";
 import { Landing } from "./component/landing";
 //create your first component
 export const Layout = () => {
@@ -19,10 +22,14 @@ export const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
 				<ScrollToTop>
+					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Landing} />
 						<Route path="/demo" component={Demo} />
+						<Route path="/login" component={Login} />
 						<Route path="/single/:theid" component={Single} />
+						<Route path="/product" component={Product} />
+						<Route path="/archive" component={Archive} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 				</ScrollToTop>
