@@ -2,26 +2,70 @@ import React, { Component } from "react";
 // import "../../styles/login.scss";
 
 export const Login = () => (
-	<div className="container-fluid login-container">
-		<div className="row justify-content-center">
-			<div className="col-md-6 login-form-2">
-				<div className="login-logo">
-					<img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+	<div className="container h-100">
+		<div className="d-flex justify-content-center h-100">
+			<div className="user_card">
+				<div className="d-flex justify-content-center">
+					<div className="brand_logo_container">
+						<img src="" className="brand_logo" alt="Logo" />
+					</div>
 				</div>
-				<h3>Login Form 2</h3>
-				<div className="form-group">
-					<input type="text" className="form-control" placeholder="Your Email *" value="" />
+				<div className="d-flex justify-content-center form_container">
+					<form>
+						<div className="input-group mb-3">
+							<div className="input-group-append">
+								<span className="input-group-text">
+									<i className="fas fa-user" />
+								</span>
+							</div>
+							<input
+								type="text"
+								name=""
+								className="form-control input_user"
+								value=""
+								placeholder="username"
+							/>
+						</div>
+						<div className="input-group mb-2">
+							<div className="input-group-append">
+								<span className="input-group-text">
+									<i className="fas fa-key" />
+								</span>
+							</div>
+							<input
+								type="password"
+								name=""
+								className="form-control input_pass"
+								value=""
+								placeholder="password"
+							/>
+						</div>
+						<div className="form-group">
+							<div className="custom-control custom-checkbox">
+								<input type="checkbox" className="custom-control-input" id="customControlInline" />
+								<label className="custom-control-label" htmlFor="customControlInline">
+									Remember me
+								</label>
+							</div>
+						</div>
+						<div className="d-flex justify-content-center mt-3 login_container">
+							<button type="button" name="button" className="btn login_btn">
+								Login
+							</button>
+						</div>
+					</form>
 				</div>
-				<div className="form-group">
-					<input type="password" className="form-control" placeholder="Your Password *" value="" />
-				</div>
-				<div className="form-group">
-					<input type="submit" className="btnSubmit" value="Login" />
-				</div>
-				<div className="form-group">
-					<a href="#" className="btnForgetPwd" value="Login">
-						Forget Password?
-					</a>
+
+				<div className="mt-4">
+					<div className="d-flex justify-content-center links">
+						Don&#39;t have an account?{" "}
+						<a href="#" className="ml-2">
+							Sign Up
+						</a>
+					</div>
+					<div className="d-flex justify-content-center links">
+						<a href="#">Forgot your password?</a>
+					</div>
 				</div>
 			</div>
 		</div>
