@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { component, fragment } from "react";
+import rigoImage from "../../img/yoyo_logo.jpg";
 import Carousel from "react-bootstrap/Carousel";
 import "../../styles/home.scss";
 
@@ -15,13 +16,20 @@ export const Home = () => (
 			<div className="col 3">
 				<header className="jumbotron container">
 					<h2 className="display-3">Yoyo&#39;s alley</h2>
+					<img
+						style={{
+							width: "130px",
+							height: "140px"
+						}}
+						src={rigoImage}
+					/>
 					{/* <p className="lead">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
 						possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat
 						numquam repellat.
 					</p> */}
-					<a href="#" className="btn btn-primary btn-lg">
-						Call to action!
+					<a href="/product" className="btn btn-primary btn-lg">
+						Checkout these awesome pins!
 					</a>
 				</header>
 			</div>

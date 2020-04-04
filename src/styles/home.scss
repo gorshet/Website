@@ -1,0 +1,38 @@
+
+.jumbotron h1{
+
+    font-weight: 800;
+    margin-bottom:30px;
+    
+    }
+    
+
+
+.jumbotron {
+    
+    height:300px;
+    background-color:rgb(255, 255, 255); 
+    
+    background-position: 200% 25%;
+    background-repeat: no-repeat;
+    
+    // background-image: url("https://famegirlgr.files.wordpress.com/2010/09/bintang-jatuh.jpg?w=490");
+    background-size: 100px;
+  }
+
+body
+{
+  background: rgb(145, 140, 143);
+}
+
+
+
+.carousel{
+    width: 640px;
+    height: 360px;
+    max-height: 50px;
+    margin: auto; 
+    display: block;
+    }
+
+

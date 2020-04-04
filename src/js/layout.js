@@ -6,12 +6,13 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Product } from "./views/product";
+import { Checkout } from "./views/checkout";
 import { Archive } from "./views/archive";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Login } from "./component/login.js";
-import { Landing } from "./component/landing";
+// import { Landing } from "./component/landing";
 //create your first component
 export const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -24,11 +25,12 @@ export const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
-						<Route exact path="/" component={Landing} />
+						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/login" component={Login} />
 						<Route path="/single/:theid" component={Single} />
 						<Route path="/product" component={Product} />
+						<Route path="/checkout" component={Checkout} />
 						<Route path="/archive" component={Archive} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

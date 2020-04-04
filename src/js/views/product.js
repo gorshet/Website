@@ -4,105 +4,195 @@ import "../../styles/product.scss";
 
 export const Product = () => (
 	<div>
+		{/*---- Include the above in your HEAD tag --------*/}
 		<link
-			href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+			href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 			rel="stylesheet"
 			id="bootstrap-css"
 		/>
 		{/*---- Include the above in your HEAD tag --------*/}
 		<div className="container">
 			<div className="row">
-				<div className="col-xs-4 item-photo">
-					<img style={{ maxWidth: "100%" }} src="https://www.bing.com/images/blob?bcid=TkPqDTOMAQUBxw" />
+				<div className="col-lg-12 my-3">
+					<div className="pull-right">
+						<div className="btn-group">
+							{/* <button className="btn btn-info" id="list">
+								List View
+							</button>
+							<button className="btn btn-danger" id="grid">
+								Grid View
+							</button> */}
+						</div>
+					</div>
 				</div>
-
-				<div className="col-xs-5" style={{ border: "0px solid blue" }}>
-					{/* Discription of product*/}
-					<h3>Crying Princess</h3>
-					<h5 style={{ color: "#337ab7" }}>
-						Sold by yoyos alley <a href="#">Queen</a> ·{" "}
-						<small style={{ color: "#337ab7" }}>(5054 views)</small>
-					</h5>
-					{/* Prices */}
-					<h6 className="title-price">
-						<small>price</small>
-					</h6>
-					<h3 style={{ marginTop: "0px" }}>$80</h3>
-					{/* Deltails of product */}
-					<div className="section">
-						<h6 className="title-attr" style={{ marginTop: "15px" }}>
-							<small>COLOR</small>
-						</h6>
-						<div>
-							<div className="attr" style={{ width: "25px", background: "Purple" }} />
-							<div className="attr" style={{ width: "25px", background: "Pink" }} />
+			</div>
+			<div id="products" className="row view-group">
+				<div className="item col-xs-4 col-lg-4">
+					<div className="thumbnail card">
+						<div className="img-event">
+							<img
+								className="group list-group-image img-fluid"
+								src="https://i.ebayimg.com/images/g/m5MAAOSwPbdeE7qP/s-l1600.jpg"
+								alt=""
+							/>
 						</div>
-					</div>
-					<div className="section" style={{ paddingBottom: "5px" }}>
-						<h6 className="title-attr">
-							<small>Size</small>
-						</h6>
-						<div>
-							<div className="attr2">Large</div>
-							<div className="attr2">Small</div>
-						</div>
-					</div>
-					<div className="section" style={{ paddingBottom: "20px" }}>
-						<h6 className="title-attr">
-							<small>How many would you like</small>
-						</h6>
-						<div>
-							<div className="btn-minus">
-								<span className="glyphicon glyphicon-minus" />
-							</div>
-							<input defaultValue={1} />
-							<div className="btn-plus">
-								<span className="glyphicon glyphicon-plus" />
+						<div className="caption card-body">
+							<h4 className="group card-title inner list-group-item-heading">Product title</h4>
+							<p className="group inner list-group-item-text">
+								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							</p>
+							<div className="row">
+								<div className="col-xs-12 col-md-6">
+									<p className="lead">$21.000</p>
+								</div>
+								<div className="col-xs-12 col-md-6">
+									<a className="btn btn-success">
+										<a href="/checkout">Add to cart</a>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					{/* Add to buy */}
-					<div className="section" style={{ paddingBottom: "20px" }}>
-						<button className="btn btn-success">
-							<span
-								style={{ marginRight: "20px" }}
-								className="glyphicon glyphicon-shopping-cart"
-								aria-hidden="true"
-							/>{" "}
-							Add to cart
-						</button>
-						<h6>
-							<a href="#">
-								<span className="fas fa-chess-queen" style={{ cursor: "pointer" }} /> Click here to like
-							</a>
-						</h6>
+				</div>
+				<div className="item col-xs-4 col-lg-4">
+					<div className="thumbnail card">
+						<div className="img-event">
+							<img
+								className="group list-group-image img-fluid"
+								src="https://i.ebayimg.com/images/g/sKAAAOSww~VePljh/s-l1600.jpg"
+								alt=""
+							/>
+						</div>
+						<div className="caption card-body">
+							<h4 className="group card-title inner list-group-item-heading">Product title</h4>
+							<p className="group inner list-group-item-text">
+								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							</p>
+							<div className="row">
+								<div className="col-xs-12 col-md-6">
+									<p className="lead">$21.000</p>
+								</div>
+								<div className="col-xs-12 col-md-6">
+									<a className="btn btn-success" href="http://www.jquery2dotnet.com">
+										<a href="/checkout">Add to cart</a>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div className="col-xs-9">
-					<ul className="menu-items">
-						<li className="active">description</li>
-					</ul>
-					<div style={{ width: "100%", borderTop: "1px solid silver" }}>
-						<p style={{ padding: "15px" }}>
-							<small>
-								dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-								massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-								mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-								consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-								arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-								felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
-								nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-								vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-								tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-								imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam
-								eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
-								semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-								luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
-								vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
-								eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
-								sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-							</small>
-						</p>
+				<div className="item col-xs-4 col-lg-4">
+					<div className="thumbnail card">
+						<div className="img-event">
+							<img
+								className="group list-group-image img-fluid"
+								src="https://i.ebayimg.com/images/g/tpIAAOSwbTNeadLC/s-l1600.jpg"
+								alt=""
+							/>
+						</div>
+						<div className="caption card-body">
+							<h4 className="group card-title inner list-group-item-heading">Product title</h4>
+							<p className="group inner list-group-item-text">
+								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							</p>
+							<div className="row">
+								<div className="col-xs-12 col-md-6">
+									<p className="lead">$21.000</p>
+								</div>
+								<div className="col-xs-12 col-md-6">
+									<a className="btn btn-success" href="http://www.jquery2dotnet.com">
+										<a href="/checkout">Add to cart</a>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="item col-xs-4 col-lg-4">
+					<div className="thumbnail card">
+						<div className="img-event">
+							<img
+								className="group list-group-image img-fluid"
+								src="https://i.ebayimg.com/images/g/EUAAAOSwAD5eadNC/s-l500.jpg"
+								alt=""
+							/>
+						</div>
+						<div className="caption card-body">
+							<h4 className="group card-title inner list-group-item-heading">Product title</h4>
+							<p className="group inner list-group-item-text">
+								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							</p>
+							<div className="row">
+								<div className="col-xs-12 col-md-6">
+									<p className="lead">$21.000</p>
+								</div>
+								<div className="col-xs-12 col-md-6">
+									<a className="btn btn-success" href="http://www.jquery2dotnet.com">
+										<a href="/checkout">Add to cart</a>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="item col-xs-4 col-lg-4">
+					<div className="thumbnail card">
+						<div className="img-event">
+							<img
+								className="group list-group-image img-fluid"
+								src="https://i.ebayimg.com/images/g/TN4AAOSwc1BeadEY/s-l500.jpg"
+								alt=""
+							/>
+						</div>
+						<div className="caption card-body">
+							<h4 className="group card-title inner list-group-item-heading">Product title</h4>
+							<p className="group inner list-group-item-text">
+								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							</p>
+							<div className="row">
+								<div className="col-xs-12 col-md-6">
+									<p className="lead">$21.000</p>
+								</div>
+								<div className="col-xs-12 col-md-6">
+									<a className="btn btn-success" href="http://www.jquery2dotnet.com">
+										<a href="/checkout">Add to cart</a>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="item col-xs-4 col-lg-4">
+					<div className="thumbnail card">
+						<div className="img-event">
+							<img
+								className="group list-group-image img-fluid"
+								src="https://i.ebayimg.com/images/g/a5YAAOSwDDdeadBe/s-l500.jpg"
+								alt=""
+							/>
+						</div>
+						<div className="caption card-body">
+							<h4 className="group card-title inner list-group-item-heading">Product title</h4>
+							<p className="group inner list-group-item-text">
+								Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							</p>
+							<div className="row">
+								<div className="col-xs-12 col-md-6">
+									<p className="lead">$21.000</p>
+								</div>
+								<div className="col-xs-12 col-md-6">
+									<a className="btn btn-success" href="http://www.jquery2dotnet.com">
+										<a href="/checkout">Add to cart</a>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
